@@ -1,13 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>game con chim</title>
+    <title>game</title>
+    <link rel="stylesheet" href="fontasomewre/css/all.css">
+    <link rel="stylesheet" href="fontasomewre/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="search.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Andika&family=Inter+Tight&family=Roboto&family=Rubik:wght@300&display=swap" rel="stylesheet">
 </head>
+<style>
+    body {
+        font-family: 'Andika', sans-serif;
+    }
+
+    .container {
+        box-shadow: 1px 1px 1px rgba(196, 196, 196, 0.575);
+        background-color: #fffdfd;
+    }
+    .container-fluid{
+        background-color: #f6f4f4;
+    }
+
+    .ul li {
+        text-decoration: none;
+        list-style: none;
+    }
+</style>
+
 <body>
-    <canvas id="gamezone" width="900" height="500"></canvas>
-    <p id="score">score: </p>
+    
+
+    <div class="container-fluid">
+        <div class="container">
+            
+            <header>
+                <!-- Image and text -->
+                <nav class="navbar navbar-light ">
+                    <a class="navbar-brand" href="#">
+                        <img src="anh1.png" width="60" height="40"
+                            class="d-inline-block align-top" alt="">
+                        NguyenVanThe
+                    </a>
+                    <div class="wrap">
+                        <form action="" class="search" method="post">
+                            <input type="text" class="searchTerm" placeholder="Bạn muốn tìm game gì?">
+                            <button type="submit" class="searchButton">
+                                Search
+                            </button>
+                        </form>
+                    </div>
+                    <ul style="display: flex; list-style: none;">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-brands fa-guilded"></i> Hưỡng Dẫn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> <i class="fa-solid fa-right-to-bracket"></i> Đăng Nhập</a>
+                    </li>
+                    </ul>
+                </nav>
+                <nav class="navbar navbar-expand-lg ">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-gamepad"></i> Game Vui</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-gamepad"></i> Game Y8</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-gamepad"></i> Game Bắn Súng</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-gamepad"></i> Game Đố Vui</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-gamepad"></i> Game Đua xe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-gamepad"></i> Game Hành Động</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-gamepad"></i> Game Nấu Ăn</a>
+                            </li>
+                        </ul>
+                </nav>
+
+            </header>
+            <hr>
+            <div class="main" style="text-align: center;">
+                <h3 style="padding: 10px 5px;">Game Flappy Bird</h3>
+                <canvas id="gamezone" width="900" height="500"></canvas>
+                <br>
+                <form>
+                    <input type="button" class="btn alert-success" value="Chơi" onclick="history.go(0)">
+                
+                    <input type="button" class="btn btn-danger" value="chơi lại" onclick="history.go(0)">
+                </form>
+
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-7">
+                    <h5 style="padding: 0px 20px;">Trò Chơi Flappy Bird - Game Flappy Bird</h5>
+                    <p>
+                        Flappy Bird 2017 là phiên bản mới nhất của trò chơi Flappy Bird cực kỳ nổi tiếng đã xuất hiện
+                        trên
+                        Game
+                        vui trước đây. Vẫn với cách chơi đơn giản giống như các phiên bản cũ, người chơi chỉ cần dùng
+                        chuột
+                        hoặc
+                        ngón tay điều khiển chú chim bay qua các chướng ngại vật đồng thời tránh các con chim khác bay
+                        ngược
+                        chiều cũng như ăn các bông hoa trên đường. Hãy chơi game và cố gắng ghi số điểm cao nhất có thể
+                        nha.
+                        Cách chơi game Flappy Bird 2017
+                    </p>
+                    <p>
+                        Trên máy tính sử dụng hoặc để chơi.
+                        Trên điện thoại chạm và xoay ngang màn hình để chơi.
+                        Game Flappy Bird 2017 có thể chơi trực tuyến trên điện thoại di động Android, iOS...
+                    </p>
+                    <p>
+                        For you and your comfort we will help you find what you need !
+                    </p>
+                   
+                    <div class="fb-like" data-href="https://www.facebook.com/thecot.haha" data-width="100%"
+                        data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
+                    <h5>Cách chơi</h5>
+                    <li> <i class="fa-solid fa-computer"></i> Sử dụng chuột để chơi</li>
+                    <li> <i class="fa-sharp fa-solid fa-mobile"></i> Chạm trên màn hình để chơi</li>
+                    <hr>
+                    <h4>Video Youtube</h4>
+                    <iframe width="620" height="350" src="https://www.youtube.com/embed/FMVFmEuWz3E" title="Game DỄ nhất mà tôi từng chơi | Flappy Bird" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <hr>
+                    <h3>Bình Luận Trên Facebook</h3>
+                    <div class="fb-comments" data-href="https://gamevui.vn/" data-width="100%" data-numposts="7"></div>
+                  
+                </div>
+                <div class="col-md-4">
+                    <img src="anh2.png" alt="" width="90%">
+
+                    <hr>
+                    <div class="card " style="width: 20rem; ">
+                        <div class="card-header" style="background-color: rgb(27, 137, 27); color: aliceblue; font-weight: bold;">
+                            Xem thêm
+                        </div>
+                        <ul class="list-group list-group-item" style="padding-bottom: 20px;color: aliceblue; list-style: none;">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-gamepad"></i> Game Đua xe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-gamepad"></i> Game Hành Động</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-gamepad"></i> Game Nấu Ăn</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-gamepad"></i> Game Y8</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-gamepad"></i> Game Bắn Súng</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-gamepad"></i> Game Đố Vui</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-gamepad"></i> Còn Cập Nhật</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+             <p class="text-center">Chúng tôi khuyên bạn nên chơi 180p một ngày để đảm bảo sức khỏe.</p>
+            <hr class="border">
+
+
+
+
+            <footer class="text-center text-lg-start" style="background-color: #fffdfd;">
+                <!-- Grid container -->
+                <div class=" p-4 pb-0">
+                    <!-- Section: Links -->
+                    <section class="">
+                        <!--Grid row-->
+                        <div class="row">
+                            <!-- Grid column -->
+                            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                                <h6 class="text-uppercase mb-4 font-weight-bold">
+                                    Game Vui
+                                </h6>
+                                <p>
+                                    Game vui đem lại cho bạn nhiều tựa game hot hiện nay,đồ họa đẹp mắt chất lượng cao.
+                                </p>
+                            </div>
+                            <!-- Grid column -->
+
+                            <hr class="w-100 clearfix d-md-none" />
+
+                            <!-- Grid column -->
+                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                                <h6 class="text-uppercase mb-4 font-weight-bold">Sản Phẩm</h6>
+                                <p>
+                                    <a>Game vui</a>
+                                </p>
+                                <p>
+                                    <a>Website bán ghế</a>
+                                </p>
+                                <p>
+                                    <a>Còn cập nhật</a>
+                                </p>
+
+                            </div>
+                            <!-- Grid column -->
+
+                            <hr class="w-100 clearfix d-md-none" />
+                            <!-- Grid column -->
+                            <hr class="w-100 clearfix d-md-none" />
+
+                            <!-- Grid column -->
+                            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                                <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                                <p><i class="fas fa-home mr-3"></i>Anh Sơn,Nghệ An</p>
+                                <p><i class="fas fa-envelope mr-3"></i>thecot2004@gmail.com </p>
+                                <p><i class="fas fa-phone mr-3"></i>0388546215</p>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                                <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+
+                                <!-- Facebook -->
+                                <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998"
+                                    href="https://www.facebook.com/thecot.haha" role="button"><i
+                                        class="fab fa-facebook-f"></i></a>
+
+
+
+                                <!-- Google -->
+                                <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="https://www.youtube.com/channel/UCXW4ERYTcLqAjxJQsUSi8tg"
+                                    role="button"><i class="fab fa-google"></i></a>
+
+                                <!-- Instagram -->
+                                <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="https://www.instagram.com/thecot07/"
+                                    role="button"><i class="fab fa-instagram"></i></a>
+
+
+                            </div>
+                        </div>
+                        <!--Grid row-->
+                    </section>
+                    <!-- Section: Links -->
+                </div>
+                <!-- Grid container -->
+
+                <!-- Copyright -->
+                <div class="text-center p-3" style="background-color: rgba(236, 236, 236, 0.2)">
+                    Copyright &copy; by Nguyễn Văn Thế
+                </div>
+                <!-- Copyright -->
+            </footer>
+            <!-- Footer -->
+        </div>
+    
+</div>
 </body>
 <script src="main.js"></script>
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v15.0&appId=592013982506068&autoLogAppEvents=1"
+    nonce="W2XmG7zL"></script>
+
 </html>

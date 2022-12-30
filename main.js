@@ -71,7 +71,7 @@ function run(){
     requestAnimationFrame(run);
 }
 //thêm function cho nó bay lên khi nhấn
-document.addEventListener("keydown",function(){
+document.addEventListener("mousedown",function(){
     bird.y-=72;   
 })
 

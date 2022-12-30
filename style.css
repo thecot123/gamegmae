@@ -1,0 +1,15 @@
+.nav-link{
+    margin: 0px 8px;
+    color: black;
+    
+}
+
+ul li :hover{
+    color: orange;
+
+}
+
+.form{
+    
+   padding-top: 40px;
+}
