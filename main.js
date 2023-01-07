@@ -69,10 +69,11 @@ function run(){
     // cho bird rơi xuống
     bird.y+=3;
     requestAnimationFrame(run);
+    scoreshow.innerHTML="score: "+score;
 }
 //thêm function cho nó bay lên khi nhấn
 document.addEventListener("mousedown",function(){
-    bird.y-=72;   
+    bird.y-=72;
 })
 
 run();

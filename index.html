@@ -33,6 +33,24 @@
         text-decoration: none;
         list-style: none;
     }
+    .diem{
+        position: absolute;
+  top: 84%;
+  left: 26%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 247, 12);
+  text-shadow: -1px 0 black, 0 1px black,      1px 0 black, 0 -1px black;
+  text-align: center;
+  font-weight: bolder;
+    }
+    body{
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
 </style>
 
 <body>
@@ -99,6 +117,7 @@
             <div class="main" style="text-align: center;">
                 <h3 style="padding: 10px 5px;">Game Flappy Bird</h3>
                 <canvas id="gamezone" width="900" height="500"></canvas>
+                    <p class="diem" id="score">score: 0</p>
                 <br>
                 <form>
                     <input type="button" class="btn alert-success" value="Chơi" onclick="history.go(0)">
@@ -147,11 +166,11 @@
                   
                 </div>
                 <div class="col-md-4">
-                    <img src="anh2.png" alt="" width="90%">
+                    <img src="anh3.jpg" alt="" width="70%">
 
                     <hr>
                     <div class="card " style="width: 20rem; ">
-                        <div class="card-header" style="background-color: rgb(27, 137, 27); color: aliceblue; font-weight: bold;">
+                        <div class="card-header" style="background-color: rgb(27, 137, 27); color: aliceblue; font-weight: bolder;">
                             Xem thêm
                         </div>
                         <ul class="list-group list-group-item" style="padding-bottom: 20px;color: aliceblue; list-style: none;">
@@ -182,6 +201,7 @@
             </div>
              <p class="text-center">Chúng tôi khuyên bạn nên chơi 180p một ngày để đảm bảo sức khỏe.</p>
             <hr class="border">
+            
 
 
 
